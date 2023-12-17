@@ -3,6 +3,7 @@ import styles from './footer.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 
+
 const Footer = () => {
   return (
     <>
