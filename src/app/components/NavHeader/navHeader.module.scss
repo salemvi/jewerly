@@ -1,0 +1,13 @@
+.link {
+    color: var(--light-colors-black-light, #000);
+    font-family: DM Sans;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+
+}
+
+.selected {
+    border-bottom: 2px #000 solid;
+}

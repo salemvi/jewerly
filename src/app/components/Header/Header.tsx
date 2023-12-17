@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import {NavHeader} from '../NavHeader/NavHeader';
 import styles from './header.module.scss';
 
 const Header = () => {
@@ -11,7 +12,8 @@ const Header = () => {
                 </h1>
             </Link>
             <div className={styles.menuWrapper}>
-                {/* тут будет навигация (клинетский компонент) */}
+                <NavHeader/>
+                <div className={styles.line}></div>
                 <Link href='/' className={styles.navIcon}>
                     <Image src='/image/search.svg' width={19} height={19} alt='search' />
                 </Link>
