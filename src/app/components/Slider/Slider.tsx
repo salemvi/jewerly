@@ -15,7 +15,6 @@ import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 
 const Slider = () => {
     return (
-      <>
         <Swiper
           pagination={true}
           modules={[EffectFade, Autoplay, Pagination]}
@@ -41,7 +40,6 @@ const Slider = () => {
             <SliderItem img={sliderImg1} title="Gold big hoops " price={68.0} object-fit="cover" />
           </SwiperSlide>
         </Swiper>
-      </>
     );
   };
 

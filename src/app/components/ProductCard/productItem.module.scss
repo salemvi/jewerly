@@ -1,0 +1,71 @@
+.productCard {
+    .imageCardWithHover {
+        position: relative;
+
+        .imageCard {
+            margin-bottom: 24px;
+            transition: 0.3s ease;
+        }
+    
+        .imageCard:hover {
+            opacity: 0.3;
+            transition: 0.3s ease;
+        }
+    }
+
+    .imageCardWithHover:hover .imageCard{
+        opacity: 0.3;
+    }
+
+    .hoverMenu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: none;
+        transform: translate(-50%, -50%);
+    }
+
+    .imageCardWithHover:hover .hoverMenu {
+        transition: 0.3s ease;
+        display: inline-flex;
+
+        .cartButton, .viewButton {
+            margin-right: 20px;
+        }
+    
+        .cartButton, .viewButton, .likeButton {
+            border: none;
+            background-color: transparent;
+        }
+        
+        .cartButton:hover {
+            opacity: 0.6;
+        }
+    
+        .viewButton:hover {
+            opacity: 0.6;
+        }
+    
+        .likeButton:hover {
+            opacity: 0.6;
+        }
+    }
+
+    .productInfo {
+        display: flex;
+        flex-direction: column;
+        
+        .title {
+            margin-bottom: 16px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .price {
+            font-family: DM Sans;
+            font-size: 20px;
+            font-weight: 400;
+            color: #A18A68;
+        }
+    }    
+}

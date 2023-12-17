@@ -1,9 +1,10 @@
 import styles from './page.module.css';
 
 import Slider from './components/Slider/Slider';
-
+import productImg1 from './../../public/image/card1.jpg';
 
 import Link from 'next/link';
+import { ProductCard } from './components/ProductCard/ProductCard';
 
 export interface IMassCard {
   img: string;
@@ -51,7 +52,14 @@ const Home = async () => {
         </Link>
       </div>
       <div className={styles.cardWrapper}>
-        {/* айтемы продуктов сюда */}
+        <ProductCard
+          height={380}
+          width={380}
+          image={productImg1}
+          id='biba'
+          price='29,00'
+          title='Nipples'
+        />
       </div>
     </>
   );

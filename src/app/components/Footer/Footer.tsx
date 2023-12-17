@@ -3,7 +3,6 @@ import styles from './footer.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 
-
 const Footer = () => {
   return (
     <>
@@ -51,7 +50,9 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div></div>
+      <div>
+        {/* {нада} */}
+      </div>
     </>
   );
 };
